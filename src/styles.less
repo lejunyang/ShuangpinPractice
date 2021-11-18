@@ -1,0 +1,87 @@
+@import "antd/dist/antd.css";
+
+.word-current {
+  color: #12a9e0;
+}
+
+.key-item-current {
+  background-color: #eaf9ff;
+}
+
+.sentence-show {
+  text-align: center;
+  font-size: 25px;
+  .error-word {
+    color: red;
+  }
+}
+
+.tips {
+  text-align: center;
+  white-space: pre-line;
+  color: grey;
+}
+
+@key-width: 70px;
+@gap: 5px;
+
+.keyboard {
+  .keyboard-row:nth-child(2) {
+    margin-left: @key-width / 2;
+  }
+  .keyboard-row:nth-child(3) {
+    margin-left: @key-width;
+  }
+}
+
+.keyboard-row {
+  display: flex;
+  margin-bottom: @gap;
+  gap: @gap;
+  // + .keyboard-row {
+  //   .keyboard-item {
+  //     border-top: none; // 解决border靠在一起
+  //   }
+  // }
+}
+
+.keyboard-item {
+  flex-shrink: 0;
+  width: @key-width;
+  height: @key-width;
+  border: 1.5px solid;
+  // outline: 1.5px solid;
+  // outline-offset: -1px;
+  // + .keyboard-item {
+  //   border-left: none;
+  // }
+  .shengmu {
+    margin-top: @gap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 21px;
+    height: 21px;
+    .key {
+      font-size: 21px;
+      font-weight: bolder;
+    }
+    .juanshe {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      white-space: break-spaces;
+    }
+  }
+  .yunmu {
+    margin-top: @gap;
+    padding-right: 10px;
+    div {
+      width: 100%;
+      text-align: right;
+      line-height: 15px;
+      height: 15px;
+      // font-style: italic;
+    }
+  }
+}
