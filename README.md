@@ -1,2 +1,2 @@
 # ShuangpinPractice
-Created with CodeSandbox
+用于练习双拼的小工具，可以不断练习整句，然鹅我已经学会双拼了，啊哈哈，这个东西不管了
